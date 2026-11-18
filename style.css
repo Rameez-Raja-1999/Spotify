@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow:hidden;
+    /* overflow:hidden; */
     font-family: "Montserrat", sans-serif;
 }
 
@@ -23,31 +23,25 @@ html, body{
 .side-bar {
     width: 15%;
     background-color: #000;
-    /* padding-left: 34px;
-    padding-top: 38px; */
     display: flex;
     flex-direction: column;
-    /* gap: 25px; */
 }
 
 .spotify-image-logo{
-    /* margin-bottom: 1rem; */
-    /* height: 120px; */
     width: 241px;
-    border: 1px solid white;
     margin-top:24px;
     margin-left: 24px;
 }
 
-.side-bar-items1{
+.side-bar-items1 {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
-    margin-top:24px;
+    margin-top: 38px;
     margin-left: 24px;
     height: 120px;
     width: 241px;
-    border: 1px solid white;
+    cursor: pointer;
 }
 
 .side-bar-items1 i{
@@ -65,46 +59,29 @@ html, body{
     gap: 1rem;
 }
 
-.side-bar-items2{
+.side-bar-items2 {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
-    /* margin-bottom: 1rem; */
-    margin-top:24px;
+    margin-top: 40px;
     margin-left: 24px;
-    height: 340.25px;
+    height: 310.25px;
     width: 241px;
-    border: 1px solid white;
+    cursor: pointer;
 }
+
 .side-bar-items2 img{
     height: 24px;
     width: 24px;
     color: #fff;
-    /* z-index: 1; */
 }
-
-/* .gradient-bg{
- background-color: #7a006a;
- padding: 6px;
- height: 24px;
- width: 24px;
- border-radius: 50%;
-} */
-
-/* .gradient-bg img{
-    z-index: -1;
-
-} */
 
 .side-bar-items3{
     width: 241px;
     height: 249px;
     margin-top:24px;
     margin-left: 24px;
-    border: 1px solid white;
 }
-
-
 
 .footer{
     position: fixed;
@@ -113,3 +90,131 @@ html, body{
     background-image: linear-gradient(to right top,  #7a006a, #6c77e0); 
     width: 100%;
 }
+
+.side-bar-items3{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.side-bar-items3 .footer-list{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.side-bar-items3 .footer-list a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.side-bar-items3 .internet-logo{
+   margin-top: 1.4rem;
+}
+
+.side-bar-items3 .internet-logo button {
+    color: #fff;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-size: 13px;
+    border: none;
+    background-color: black;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 0.6rem;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.side-bar-items3 .internet-logo button i{
+    font-size: 1rem;
+}
+
+
+.main-body {
+    overflow: scroll;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 1rem;
+}
+
+.main-body a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-body .main-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-body .main-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    color: #fff;
+    flex-wrap: wrap;
+    /* background-color: rgb(7, 7, 7); */
+    padding: 1rem;
+    width: 100%;
+}
+
+
+
+.main-body .main-card-container .music-card {
+    height: 300px;
+    width: 207px;
+    border-radius: 7px;
+    padding: 16px;
+    background-color: #fff;
+    color: #ffffff;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+/* #main-card-container2{
+    background-color: #fff;
+} */
+
+.music-card:hover{
+    box-shadow: rgba(70, 60, 209, 0.4) 0px 30px 90px;
+    transition: box-shadow 0.5s ease,
+                transform 0.5s ease;
+}
+
+.main-body .main-card-container .music-card img{
+    width: 176px;
+    height: 176px;
+    border-radius: 6px;
+}
+
+.music-card h3{
+    font-size: 1rem;
+}
+
+.music-card p{
+    font-size: 12px;
+}
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
