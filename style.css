@@ -169,8 +169,6 @@ html, body{
     width: 100%;
 }
 
-
-
 .main-body .main-card-container .music-card {
     height: 300px;
     width: 207px;
@@ -209,7 +207,6 @@ html, body{
 .music-card p{
     font-size: 12px;
 }
-
 
 .footer{
     display: flex;
