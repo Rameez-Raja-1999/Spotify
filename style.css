@@ -215,3 +215,17 @@ html, body{
     text-align: center;
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-para {
+    text-transform: uppercase;
+}
